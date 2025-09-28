@@ -51,7 +51,7 @@
       containers.podman.podman_container:
         name: certbot
         image: docker.io/certbot/certbot:nightly
-        command: "certonly --webroot --webroot-path=/var/www/certbot --non-interactive --agree-tos -m grps.hq@gmail.com -d registry.hq.appsecacademy.tech"
+        command: "certonly --webroot --webroot-path=/var/www/certbot --non-interactive --agree-tos -m grps.hq@gmail.com -d registry.hq.pentestacademy.tech"
         detach: false
         network: web_net
         volumes:

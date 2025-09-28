@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name registry.hq.appsecacademy.tech;
+    server_name registry.hq.pentestacademy.tech;
 
     location /.well-known/acme-challenge/ {
         root /var/www/certbot;
@@ -13,10 +13,10 @@ server {
 
 server {
     listen 443 ssl;
-    server_name registry.hq.appsecacademy.tech;
+    server_name registry.hq.pentestacademy.tech;
 
-    ssl_certificate /etc/letsencrypt/live/registry.hq.appsecacademy.tech/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/registry.hq.appsecacademy.tech/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/registry.hq.pentestacademy.tech/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/registry.hq.pentestacademy.tech/privkey.pem;
 
     client_max_body_size 500M;
     # Location block for the Docker Registry API
